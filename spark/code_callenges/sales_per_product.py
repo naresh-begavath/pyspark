@@ -43,8 +43,3 @@ class SalesDataProcessor:
 
         self.spark.stop()
         self.sc.stop()
-
-
-if __name__ == '__main__':
-    processor = SalesDataProcessor()
-    processor.process()
