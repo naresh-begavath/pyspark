@@ -1,5 +1,3 @@
-from pyspark.sql.functions import col
-
 from spark.spark_session import init_spark_session
 
 
