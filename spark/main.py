@@ -1,5 +1,7 @@
 from spark.code_callenges.customer_transactions_per_amount import CustomerTransactionsPerAmount
+from spark.code_callenges.dynamically_filling_missing_values import FillMissingValuesDynamically
 from spark.code_callenges.employees_latest_sales import EmployeesLatestSales
+from spark.code_callenges.remove_duplicate_records_dynamically import RemoveDuplicateRecordsDynamically
 from spark.code_callenges.update_nulls_of_agg_sales_for_employees import UpdatedNullsByAggSalesForEmployee
 from spark.code_callenges.sales_per_product import SalesDataProcessor
 
@@ -16,3 +18,11 @@ if __name__ == "__main__":
 
     employees_latest_sales_data = EmployeesLatestSales()
     employees_latest_sales_data.process()
+
+    # Fill missing values dynamically
+    fill_missing_vals_dynamically = FillMissingValuesDynamically()
+    fill_missing_vals_dynamically.process()
+
+    # Removing duplicates dynamically
+    removed_duplicates_dynamically = RemoveDuplicateRecordsDynamically()
+    removed_duplicates_dynamically.process()
