@@ -1,5 +1,6 @@
 from spark.code_callenges.Day3_filter_customers_based_on_multple_business_conditions import \
     FilterCustomersBaseOnBusinessConditions
+from spark.code_callenges.Day4_derive_new_cols_by_when_otherwise import PerformanceCategoryByRatings
 from spark.code_callenges.customer_transactions_per_amount import CustomerTransactionsPerAmount
 from spark.code_callenges.Day1_dynamically_filling_missing_values import FillMissingValuesDynamically
 from spark.code_callenges.employees_latest_sales import EmployeesLatestSales
@@ -32,3 +33,7 @@ if __name__ == "__main__":
     # Filter customers based on business conditions
     filter_customers_on_business_conditions = FilterCustomersBaseOnBusinessConditions()
     filter_customers_on_business_conditions.process()
+
+    # Rating the restaurants
+    performance_category_by_ratings = PerformanceCategoryByRatings()
+    performance_category_by_ratings.process()
